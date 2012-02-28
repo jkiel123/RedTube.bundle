@@ -122,7 +122,7 @@ def PornstarsList(sender,mainTitle,searchQuery='',sortOrder=''):
 		pornstarItemThumb = pornstarItem.xpath('div/a/img')[0].get('src')
 		pornstarItemNrVids = pornstarItem.xpath('div[@class="videosCount"]/text()')[0].replace('Videos', '').strip()
 		pornstarItemTitle = pornstarItemTitle+' ('+pornstarItemNrVids+' Videos)'
-		Log(pornstarItemTitle+'__'+pornstarItemQuery+'__'+pornstarItemThumb+'__'+pornstarItemNrVids)
+		#Log(pornstarItemTitle+'__'+pornstarItemQuery+'__'+pornstarItemThumb+'__'+pornstarItemNrVids)
 		pageFormat = 'pornstars'
 		dir.Append(Function(DirectoryItem(MovieList, L(pornstarItemTitle), thumb=Function(Thumb, url=pornstarItemThumb)), url=REDTUBE_PORNSTAR, mainTitle=pornstarItemTitle, searchQuery=pornstarItemQuery, pageFormat=pageFormat, sortOrder=''))
 	return dir
