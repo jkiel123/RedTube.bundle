@@ -30,7 +30,7 @@ def Start():
 	DirectoryItem.thumb = R(ICON)
 	VideoItem.thumb = R(ICON)
 
-	HTTP.CacheTime = 60
+	HTTP.CacheTime = 360
 	HTTP.RandomizeUserAgent(browser=None)
 
 ####################################################################################################
