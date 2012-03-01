@@ -31,6 +31,7 @@ def Start():
 	VideoItem.thumb = R(ICON)
 
 	HTTP.CacheTime = 360
+	HTTP.Headers['Referer'] = 'http://plexchannels.flowsworld.com'
 	HTTP.RandomizeUserAgent(browser=None)
 
 ####################################################################################################
