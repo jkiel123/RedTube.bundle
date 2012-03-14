@@ -30,7 +30,7 @@ def Start():
 	DirectoryItem.thumb = R(ICON)
 	VideoItem.thumb = R(ICON)
 
-	HTTP.CacheTime = 360
+	HTTP.CacheTime = 60
 	HTTP.Headers['Referer'] = 'http://plexchannels.flowsworld.com'
 	HTTP.RandomizeUserAgent(browser=None)
 
